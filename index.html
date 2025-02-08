@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="books.html">Books & Songs</a></li>
+            <li><a href="love-letter.html">Special Note</a></li>
+            <li><a href="quiz.html">Quiz</a></li> <!-- New Quiz Section -->
+
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- Surprise Button -->
+        <button id="surprise-btn" class="surprise-button">Click Me for a Surprise 🎁</button>
+
+        <!-- Valentine Question (Hidden Initially) -->
+        <div id="valentine-question" class="hidden">
+            <h2 class="fade-in">Will You Be My Valentine???????? 💖</h2>
+
+            <div class="buttons">
+                <button id="yes-btn" class="yes-button">Yes 😊</button>
+                <button id="no-btn" class="no-button">No 😢</button>
+            </div>
+        </div>
+
+        <div id="love-meter" class="hidden">
+            <h3>How much do you love me, buddyyyy jiiiiiii? ❤️</h3>
+            <input type="range" id="love-slider" min="50" max="100" value="75">
+            <p id="love-score">75%</p>
+            
+            <!-- Fireworks Container -->
+            <div id="fireworks-container" class="hidden"></div>
+        </div>
+        
+        <p id="response" class="hidden">Yay! I knew you'd say yes! ❤️🥰</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Letter 💌</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="books.html">Books & Songs</a></li>
+            <li><a href="love-letter.html">Special Note</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+
+        </ul>
+    </nav>
+
+    <h2>💌 A Special Letter for You, Budsss!!!</h2>
+    <div class="envelope" onclick="openLetter()">
+        <img style="width: 35%  ; height: 45%;" src="envelope.jpeg" alt="Envelope">
+    </div>
+
+    <div id="letter-content" class="hidden">
+        <p>To my Favvvvvv buddyyyy...</p>
+        <p>From the moment we met, I knew you were special. Your smile lights up my world, and your laughter is my favorite melody. Every day with you is a dream come true. I love you endlessly. ❤️</p>
+    </div>
+
+    <script>
+        function openLetter() {
+            document.getElementById("letter-content").classList.remove("hidden");
+        }
+    </script>
+
+</body>
+</html>
